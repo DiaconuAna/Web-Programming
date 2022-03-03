@@ -1,0 +1,157 @@
+/* 3. Write a web page which should contain in a table person images. The table should be formatted using a style sheet.
+ When the mouse is over a person image a div containing information about that person should pop-up. */
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 50%
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{text-align: center;
+    font-family: "Times New Roman", Arial, serif;
+    font-style: italic;
+    font-size: 100px;}
+
+/*td img:hover {
+    width: 75%;
+    background-color: yellow;
+    display:block;
+} */
+
+#kdiv {
+
+    display: none;
+    position: absolute;
+    background: rosybrown;
+    width: 0;
+    height: 280px;
+    float: right;
+    color: black;
+    font-family: "Times New Roman", Arial, serif;
+    font-style: italic;
+    font-size: 70px;
+    /* top right bottom left */
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+#shdiv {
+
+    display: none;
+    position: absolute;
+    background: rebeccapurple;
+    width: 0;
+    height: 350px;
+    float: left;
+    color: black;
+    font-family: "Times New Roman", Arial, serif;
+    font-style: italic;
+    font-size: 70px;
+    /* top right bottom left */
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+
+#hediv {
+
+    display: none;
+    position: absolute;
+    background: lightblue;
+    width: 0;
+    height: 290px;
+    float: left;
+    color: black;
+    font-family: "Times New Roman", Arial, serif;
+    font-style: italic;
+    font-size: 70px;
+    /* top right bottom left */
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+#javidiv {
+
+    display: none;
+    position: absolute;
+    background: palegoldenrod;
+    width: 0;
+    height: 310px;
+    float: left;
+    color: black;
+    font-family: "Times New Roman", Arial, serif;
+    font-style: italic;
+    font-size: 70px;
+    /* top right bottom left */
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+#yunadiv {
+
+    display: none;
+    position: absolute;
+    background: #620C4F;
+    width: 0;
+    height: 320px;
+    float: left;
+    color: black;
+    font-family: "Times New Roman", Arial, serif;
+    font-style: italic;
+    font-size: 70px;
+    /* top right bottom left */
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+#nathandiv {
+
+    display: none;
+    position: absolute;
+    background: orangered;
+    width: 0;
+    height: 310px;
+    float: left;
+    color: black;
+    font-family: "Times New Roman", Arial, serif;
+    font-style: italic;
+    font-size: 70px;
+    /* top right bottom left */
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+td #kaori:hover + #kdiv{
+    width: 75%;
+    display:block;
+}
+
+td #shoma:hover + #shdiv{
+    width: 75%;
+    display: block;
+}
+
+td #haein:hover + #hediv{
+    width: 75%;
+    display: block;
+}
+
+td #javier:hover + #javidiv{
+    width: 75%;
+    display: block;
+}
+
+td #yuna:hover + #yunadiv{
+    width: 75%;
+    display: block;
+}
+
+td #nathan:hover + #nathandiv{
+    width: 75%;
+    display: block;
+}
