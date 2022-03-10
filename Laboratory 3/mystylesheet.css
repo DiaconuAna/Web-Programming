@@ -1,0 +1,296 @@
+html, body{
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #2b5b84;
+    display: block;
+}
+
+button{
+    font: normal 100%/1.625 SourceSansProRegular, Arial, sans-serif;
+}
+
+div, li, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.up{
+    /*color: #bbb;
+    background-color: #1e2933; */
+    /*border: 3px solid coral;*/
+    /*border-bottom: 1px solid #1f3b47;
+    border-top: 3px solid #3776ab;*/
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: #999;
+    background-color: #1f2a32;
+}
+
+.up #python1{
+    border-top: 3px solid #3776ab;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #13191e), color-stop(90%, #1f2a32));
+    color: white;
+}
+
+.up #psf{
+    border-top: 3px solid #78797a;
+}
+
+.up #docs{
+    border-top: 3px solid #ffd343;
+}
+
+.up #pypi{
+    border-top: 3px solid #82b043;
+}
+
+.up #jobs{
+    border-top: 3px solid #a06ba7;
+}
+
+.up #community{
+    border-top: 3px solid #b55863;
+}
+
+.uppermenu{
+    /*border: 3px solid darkred;*/
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background-color: #1f2a32;
+    justify-content: center; /* used because of the flex container */
+    vertical-align: baseline;
+    padding: 0;
+    margin: 0 auto;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.uppermenu > .upperitem {
+
+    width: 13%; /* how much space takes each component of the menu */
+    border-left: 1px solid #273643;
+    border-right: 1px solid #11171d;
+    background-color: #1f2a32;
+    line-height: 2.8em;
+}
+
+.mainheader{
+    background-image: linear-gradient(#1e415e 10%, #2b5b84 90%);
+    border-top: 1px solid #191919;
+}
+
+.mainheader .container{
+    text-align: center;
+    padding: 0.75em 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+}
+
+.pythonlogo{
+    margin: 0.15em 11% 0.2em;
+    /*
+    margin-top: 0.15em;
+    margin-right: auto;
+    margin-bottom: 0.2em;
+    margin-left: auto;
+     */
+}
+
+.logo{
+
+}
+
+.donate-button{
+    display: block;
+    /*left: 600px;
+    top: 50px;*/
+    text-align: center;
+    position: relative;
+    margin: 1.3em 1em 6em ;
+    font-size: 120%;
+}
+
+.donate-button{
+    border-radius: 6px;
+    right: -9px;
+    top: -5px;
+    color: #4d4d4d;
+    background-image: linear-gradient(#ffdf76 10%, #ffd343 90%);
+    background-size: 100%;
+    border-top: 1px solid #dca900;
+    border-right: 1px solid #dca900;
+    border-bottom: 1px solid #dca900;
+    border-left: 1px solid #dca900;
+}
+
+.options{
+    display: flex;
+    float: none;
+    width: 41%;
+    padding: 0;
+    margin-inline-end: 5%; /* top right bottom left */
+    margin: 1% 10em 1em auto;
+
+    /*
+margin-top: 0.15em;
+margin-right: auto;
+margin-bottom: 0.2em;
+margin-left: auto;
+ */
+}
+
+
+.options-bar{
+    display: flex;
+    list-style: none;
+    background-color: #1e2933;
+    justify-content: space-around; /* used because of the flex container */
+    padding: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 100%;
+    color: #bbb;
+    margin: 0 auto 1.3125em;
+    /*
+   margin-top: 0.15em;
+   margin-right: auto;
+   margin-bottom: 0.2em;
+   margin-left: auto;
+    */
+    border-top: 1px solid #2d3e4d;
+    border-bottom: 1px solid #070a0c;
+    border-radius: 6px;
+    height: 38%;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.options-bar > .optionsitem{
+    justify-content: center; /* used because of the flex container */
+    align-content: space-around;
+    margin-inline-end: 10px;
+    margin-inline-start: 10px;
+    font: inherit;
+
+}
+
+.optionsitem {
+
+}
+
+.gobuttondiv{
+    margin-left: 3%;
+    border-right: 6px solid crimson;
+
+}
+
+.gobutton{
+    /*border-right: 1px solid #070a0c;*/
+    margin-left: 3%;
+    background-color: #2b5b84;
+    color: #e6e8ea;
+    background-size: 100%;
+    background-image: linear-gradient(#3776ab 10%, #2b5b84 90%);
+    border-top: 1px solid #3d83be;
+    border-right: 1px solid #3776ab;
+    border-bottom: 1px solid #3776ab;
+    border-left: 1px solid #3d83be;
+    white-space: nowrap;
+    height: 2.5em;
+    width: 3em;
+    border-radius: 7px;
+    font: normal 100%/1.625 SourceSansProRegular, Arial, sans-serif;
+}
+
+#socialize{
+    border-left: 1px solid #273643;
+    text-align: center;
+    margin-inline-end: 10px;
+
+}
+
+.optionsitem.search{
+    width: 100%;
+    height: 100%;
+    font-size:14pt;
+    color: darkgray;
+    /*border: 6px solid #ff5e54;*/
+}
+
+.optionsitem.search::placeholder{
+    color: #c9c9c9;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 0;
+
+}
+
+.middlelist{
+
+    position: relative;
+    display: block;
+    width: 76%;
+    text-align: center;
+    font-size: 1.125em;
+    color: #fff;
+    text-shadow: none;
+    margin: -7.5% auto;
+    background-image: linear-gradient(#3776ab 30%, #2d618c 95%);
+    border-top: 1px solid #629ccd;
+    border-bottom: 1px solid #18334b;
+    border-radius: 0.3em;
+
+    /*
+  margin-top: 0.15em;
+  margin-right: auto;
+  margin-bottom: 0.2em;
+  margin-left: auto;
+   */
+}
+
+.middlemenu{
+    /*border: 3px solid darkred;*/
+    display: flex;
+    list-style: none;
+    width: 80%;
+    justify-content: center; /* used because of the flex container */
+    vertical-align: baseline;
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.middlemenu > .middleitem {
+
+    width: 13%; /* how much space takes each component of the menu */
+    border-right: 0.7px solid #595959;
+    line-height: 2.8em;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+#d2{
+   width: 20%;
+}
+
+#s1{
+    width: 20%;
+}
+
+#n1{
+    width: 10%;
+}
