@@ -1,3 +1,7 @@
+@import url(//db.onlinewebfonts.com/c/88eb29785b94842f7b48a3050e2c96f9?family=Flux);
+
+@font-face {font-family: "Flux"; src: url("//db.onlinewebfonts.com/t/88eb29785b94842f7b48a3050e2c96f9.eot"); src: url("//db.onlinewebfonts.com/t/88eb29785b94842f7b48a3050e2c96f9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/88eb29785b94842f7b48a3050e2c96f9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/88eb29785b94842f7b48a3050e2c96f9.woff") format("woff"), url("//db.onlinewebfonts.com/t/88eb29785b94842f7b48a3050e2c96f9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/88eb29785b94842f7b48a3050e2c96f9.svg#Flux") format("svg"); }
+
 html, body{
     font-family: 'Source Sans Pro', sans-serif;
     height: 100%;
@@ -38,6 +42,7 @@ div, li, header {
     border-top: 3px solid #3776ab;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #13191e), color-stop(90%, #1f2a32));
     color: white;
+
 }
 
 .up #psf{
@@ -87,6 +92,7 @@ div, li, header {
 .mainheader{
     background-image: linear-gradient(#1e415e 10%, #2b5b84 90%);
     border-top: 1px solid #191919;
+    overflow: auto;
 }
 
 .mainheader .container{
@@ -122,13 +128,14 @@ div, li, header {
     position: relative;
     margin: 1.3em 1em 6em ;
     font-size: 120%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .donate-button{
     border-radius: 6px;
     right: -9px;
     top: -5px;
-    color: #4d4d4d;
+    color: #4d5861;
     background-image: linear-gradient(#ffdf76 10%, #ffd343 90%);
     background-size: 100%;
     border-top: 1px solid #dca900;
@@ -250,8 +257,12 @@ margin-left: auto;
     text-shadow: none;
     margin: -7.5% auto;
     background-image: linear-gradient(#3776ab 30%, #2d618c 95%);
-    border-top: 1px solid #629ccd;
+
     border-bottom: 1px solid #18334b;
+    border-top: 1px solid #629ccd;
+
+
+
     border-radius: 0.3em;
 
     /*
@@ -263,10 +274,9 @@ margin-left: auto;
 }
 
 .middlemenu{
-    /*border: 3px solid darkred;*/
     display: flex;
     list-style: none;
-    width: 80%;
+    width: 75%;
     justify-content: center; /* used because of the flex container */
     vertical-align: baseline;
     padding: 0;
@@ -277,14 +287,17 @@ margin-left: auto;
 .middlemenu > .middleitem {
 
     width: 13%; /* how much space takes each component of the menu */
-    border-right: 0.7px solid #595959;
+    border-right: 1px solid #2b5b84;
     line-height: 2.8em;
     font-family: 'Source Sans Pro', sans-serif;
 
 }
+#d1{
+    width: 15%;
+}
 
 #d2{
-   width: 20%;
+   width: 23%;
 }
 
 #s1{
@@ -293,4 +306,313 @@ margin-left: auto;
 
 #n1{
     width: 10%;
+}
+
+#c1{
+    width: 17%;
+}
+
+.console{
+    position: relative;
+}
+
+.comment{
+    color: #666;
+}
+
+.output{
+    color: #ddd;
+}
+
+code{
+    display: inline-block;
+    color: #11a611;
+    font-family: Consolas, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    line-height: 1.6em;
+    position: relative;
+    top: -2.5em;
+    left: -59%;
+
+}
+
+.bigmiddle{
+
+    /*background-color: #1f2a32;*/
+    background-color: gold;
+    list-style: none;
+    position: relative;
+    display: flex;
+    width: 64%;
+    height: 18em;
+    text-align: left;
+    margin: 7.5% auto;
+    /*
+ margin-top: 0.15em;
+ margin-right: auto;
+ margin-bottom: 0.2em;
+ margin-left: auto;
+  */
+    justify-content: center;
+    align-items: center;
+    vertical-align: baseline;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.shell{
+    background-color: #ffd343;
+    border-bottom: 1px solid #ffdf76;
+    background-image: linear-gradient(#ffdf76 10%, #ffd343 90%);
+    border-top: 1px solid #dca900;
+    border-right: 1px solid #dca900;
+    border-bottom: 1px solid #dca900;
+    border-left: 1px solid #dca900;
+    border-radius: 0.4em;
+
+    cursor: pointer;
+    color: #4d4d4d !important;
+    font-weight: normal;
+    margin-bottom: 0.4375em;
+    padding: 0.4em 0.75em 0.35em;
+    text-align: left;
+    white-space: nowrap;
+    text-shadow: 1px 1px 1px rgb(255 255 255 / 30%);
+
+    position:absolute;
+    top:7%;
+    right: 3.5%;
+    height: 16%;
+
+    font-family: Flux, SourceSansProRegular, Arial, sans-serif;
+    font-size: 120%;
+    letter-spacing: -.0625em;
+
+}
+
+.codeslide{
+    background: #1e2933;
+    -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0 0 30px rgb(0 0 0 / 60%);
+    box-shadow: inset 0 0 30px rgb(0 0 0 / 60%);
+    /*background-color: #1f2a32;*/
+    list-style: none;
+    position: relative;
+    top: 0%;
+    /*display: block;*/
+    width: 44%;
+    height: 86%;
+    text-align: left;
+    /*margin: 0 auto;*/
+    /*margin: -2.4% auto -3% -3%;*/
+    /*margin-left: 50%;*/
+    left: 0%;
+    padding: 1.25em 1.5em;
+
+
+}
+
+.details{
+    background: #1c3b56;
+    padding: 1.25em 2.5em;
+    text-align: left;
+    /*
+ margin-top: 0.15em;
+ margin-right: auto;
+ margin-bottom: 0.2em;
+ margin-left: auto;
+  */
+    position: relative;
+    width: 60%;
+    height: 86%;
+}
+
+#functions{
+    color: #ffd343;
+    font-size: 1.3125em;
+    font-family: SourceSansProBold, Arial, sans-serif;
+    position: relative;
+    top: -0.6em;
+}
+
+.a, #flink{
+    color: #ffd343;
+}
+
+a:link{
+    -webkit-tap-highlight-color: #1e2933;
+
+}
+
+.anc{
+    color: #3776ab;
+    text-decoration: none;
+    -webkit-tap-highlight-color: #1e2933;
+}
+
+#fdcr{
+    color: #e6e8ea;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    line-height: 1.6em;
+    position: relative;
+    top: -1em;
+
+}
+
+.detaillist{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+    position: relative;
+    margin-left: -2em;
+
+}
+
+.lvl2{
+    color: darkgray;
+    text-shadow: none;
+    border-radius: 15%;
+    top: 10em;
+    margin-right: 1.6em;
+    width: 70%;
+    background-image: -webkit-linear-gradient(#3776ab 10%, #2b5b84 90%);
+    box-shadow: inset 0 0 5px rgba(55,118,171,0.2);
+    border-top: 1px solid #3d83be;
+    border-right: 1px solid #3776ab;
+    border-bottom: 1px solid #3776ab;
+    border-left: 1px solid #3d83be;
+    white-space: nowrap;
+
+}
+
+#button1{
+    background-color: white;
+    color: #ffd343 !important;
+    opacity: 1;
+    background-image: linear-gradient(#3776ab 10%, #2b5b84 90%);
+}
+
+.introduction{
+    position: relative;
+    justify-content: center;
+    padding: 0 1.5em;
+    font-size: 1.5em;
+    color: #caccce;
+    top: -4em;
+    right: -18em;
+    width: 41%;
+}
+
+.introduction a, .introduction a:link, .introduction a:visited {
+    color: #ffd343;
+    text-decoration: underline; }
+
+.introduction p{
+    line-height: 1.4em;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.introduction .linebreak {
+    text-align: center;
+}
+
+.readmore {
+    content: ">>>";
+    margin-right: 0.25em;
+    font-family: Flux, SourceSansProRegular, Arial, sans-serif;
+    color: #ffd343;
+    text-decoration: underline;
+}
+
+.content{
+    position: relative;
+    background-color:  #f9f9f9;
+    top: -4em;
+    width: 100%;
+    height: 100%;
+}
+
+.row-container{
+    position: relative;
+    top: 5%;
+    margin-inline-start: 11%;
+    margin-inline-end: 11%;
+    padding-bottom: 10em;
+
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+
+
+}
+
+.small-widget{
+    border-top: 4px solid #75a8d3;
+    width: 48.93617%;
+    float: left;
+    margin-right: 2.12766%;
+    padding: 1.25em;
+    vertical-align: bottom;
+}
+
+.small-widget p{
+    margin-top: 0.1em;
+    margin-bottom: 0.875em;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    top: -1em;
+    left: 0.6em;
+    font-size: 0.9em;
+    color: #444444;
+    line-height: 1.5em;
+}
+
+#column1, #column2 {
+    border-bottom: 4px solid #75a8d3;
+    color: #444;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+}
+
+.w1{
+    position: relative;
+    top: -0.5em;
+    display: inline-block;
+    font-size: 1.50938em;
+    color: #444;
+    line-height: 1.25em;
+    margin: 0 0 0.1em;
+    font-family: SourceSansProRegular, Arial, sans-serif;
+}
+
+.widget-title{
+    font-family: Flux, SourceSansProRegular, Arial, sans-serif;
+    font-weight: 10;
+    position: relative;
+
+}
+
+.simg{
+    position: relative;
+    top: 0.1em;
+}
+
+.pre{
+   position: relative;
+    border: 5px solid crimson;
 }

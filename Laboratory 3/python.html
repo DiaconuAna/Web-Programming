@@ -5,6 +5,9 @@
     <title>Welcome to Python.org</title>
     <link rel="stylesheet" href="mystylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/88eb29785b94842f7b48a3050e2c96f9?family=Flux" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="https://www.python.org/static/favicon.ico">
 
 </head>
 <body>
@@ -15,7 +18,7 @@
             <li class = "upperitem" id = "python1">Python</li>
             <li class = "upperitem" id="psf" style="border-top-color: #78797a">PSF</li>
             <li class = "upperitem" id="docs">Docs</li>
-            <li class = "upperitem" id="pypi">PyPi</li>
+            <li class = "upperitem" id="pypi">PyPI</li>
             <li class = "upperitem" id = "jobs" >Jobs</li>
             <li class = "upperitem" id = "community">Community</li>
         </ul>
@@ -33,9 +36,9 @@
             <div class = "options-bar">
                 <img class="optionsitem searchlogo" src="output-onlinepngtools.png" width="28" height="28" alt="python™">
                 <div>
-                    <input class = "optionsitem search" type="text" placeholder="Search">
+                    <input class = "optionsitem search" type="text" placeholder="Search" style="height:2em; width:15em;">
                 </div>
-                    <button class = "gobutton" >GO</button>
+                <button class = "gobutton" >GO</button>
                 <div class = "optionsitem" id="socialize">Socialize</div>
             </div>
         </div>
@@ -54,10 +57,78 @@
             </ul>
         </div>
     </div>
+    <div class = "bigmiddle">
+        <div class="codeslide">
+            <pre>
+                <code>
+                <span class="comment"># Python 3: Fibonacci series up to n</span>
+                &gt;&gt;&gt; def fib(n):
+                &gt;&gt;&gt;    a, b = 0, 1
+                &gt;&gt;&gt;    while a &lt; n:
+                &gt;&gt;&gt;         print(a, end=' ')
+                &gt;&gt;&gt;         a, b = b, a+b
+                &gt;&gt;&gt;    print()
+                &gt;&gt;&gt; fib(1000)
+                <span class="output">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</span>
+                </code>
+            </pre>
+            <button class = "shell"> >_ </button>
+        </div>
+        <div class = "details">
+            <h2 id = "functions">Functions Defined</h2>
+            <p id = "fdcr">
+                The core of extensible programming is defining functions. Python allows mandatory and optional
+                arguments, keyword arguments, and even arbitrary argument lists.
+                <a href = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions" id = "flink" target=”_blank”>More about defining functions in Python 3</a>
+            </p>
+            <ul class = "detaillist">
+                <li><button class = "lvl2" id = "button1">1</button></li>
+                <li><button class = "lvl2">2</button></li>
+                <li><button class = "lvl2">3</button></li>
+                <li><button class = "lvl2">4</button></li>
+                <li><button class = "lvl2">5</button></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class = "introduction">
+        <p>
+            Python is a programming language that lets you work quickly
+            <br>
+            <span class = "linebreak">     and integrate systems more effectively. </span>
+            <a class = "readmore" href = "https://www.python.org/doc/" target = "_blank"> >>> Learn More</a>
+        </p>
+    </div>
 
 </header>
 
 <div class = "content">
+    <div class = "row-container">
+        <div class="small-widget get-started-widget">
+            <img class = "w1 simg" src="Screenshot_51.png" width="40" height="40" alt="img1">
+            <h2 class="w1 widget-title"><span aria-hidden="true"></span>Get Started</h2>
+            <p class = "det">Whether you're new to programming or an experienced developer, it's easy to learn and use Python.</p>
+            <p class = "det"><a class = "anc" href="https://www.python.org/about/gettingstarted/" target = "_blank">Start with our Beginner’s Guide</a></p>
+        </div>
+        <div class="small-widget download-widget">
+            <img class = "w1 simg" src="Screenshot_50.png" width="40" height="40" alt="img2">
+            <h2 class="w1 widget-title"><span aria-hidden="true" class="icon-download"></span>Download</h2>
+            <p class = "det">Python source code and installers are available for download for all versions!</p>
+            <p class = "det">Latest: <a class = "anc" href="https://www.python.org/downloads/release/python-3102/" target = "_blank">Python 3.10.2</a></p>
+        </div>
+        <div class="small-widget documentation-widget">
+            <img class = "w1 simg" src="Screenshot_52.png" width="40" height="40" alt="img3">
+            <h2 class="w1 widget-title"><span aria-hidden="true" class="icon-documentation"></span>Docs</h2>
+            <p class = "det">Documentation for Python's standard library, along with tutorials and guides, are available online.</p>
+            <p class = "det"><a class = "anc" href="https://docs.python.org" target = "_blank">docs.python.org</a></p>
+        </div>
+        <div class="small-widget jobs-widget last">
+            <img class = "w1 simg" src="Screenshot_53.png" width="40" height="40" alt="img4">
+            <h2 class="w1 widget-title"><span aria-hidden="true" class="icon-jobs"></span>Jobs</h2>
+            <p class = "det">Looking for work or have a Python related position that you're trying to hire for? Our <strong>relaunched community-run job board</strong> is the place to go.</p>
+            <p class = "det"><a class = "anc" href="https://jobs.python.org" target = "_blank">jobs.python.org</a></p>
+        </div>
+    </div>
 
 </div>
 
