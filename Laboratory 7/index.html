@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Book</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Browse/browsingRecipes.js"></script>
+    <script type="text/javascript" src="Browse/filterRecipes.js"></script>
+</head>
+<body>
+<div id = 'mainHeaderDiv'>
+    <h2>RECIPE BOOK</h2>
+</div>
+
+<main>
+    <div id = 'mainDiv'>
+        <button class = 'main' onclick="location.href='/Lab7take2/Operations/addRecipe.php'">Add recipe</button>
+        <button class = 'main' onclick="location.href='/Lab7take2/Operations/deleteRecipe.php'">Delete recipe</button>
+        <button class = 'main' onclick="location.href='/Lab7take2/Operations/updateRecipe.php'">Update recipe</button>
+        <button class = 'main' onclick="window.open('Browse/browsingPage.php','_blank')">Browse recipes</button>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    background-image: url("Resources/b3.jpg");
+    font-family: "Trebuchet MS", sans-serif;
+
+}
+
+h2{
+    position: relative;
+    margin: auto;
+    width: 8em;
+    right: -2rem;
+    padding: 10px;
+    color: white;
+}
+
+#mainHeaderDiv{
+    margin: auto;
+    width: 40%;
+    position: relative;
+    top: -1rem;
+    height: 5rem;
+    background-color: orangered;
+}
+
+#addHeader, #deleteHeader, #updateHeader, #browseHeader{
+    margin: auto;
+    width: 56%;
+    position: relative;
+    top: -1rem;
+    height: 5rem;
+    background-color: orangered;
+    left: 2.8rem;
+}
+
+#mainDiv, #addDiv, #deleteDiv, #updateDiv, #filterDiv{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+button{
+    justify-content: center;
+    align-self: center;
+    background: orangered;
+    color: white;
+    width: 100%;
+    height: 3rem;
+    margin: 10px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+}
+
+.add, .delete{
+    justify-content: center;
+    align-self: center;
+    width: 250%;
+    height: 3rem;
+    margin: 10px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+}
+
+.update{
+    justify-content: center;
+    align-self: center;
+    width: 176%;
+    height: 3rem;
+    margin: 10px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+}
+
+.browse{
+    justify-content: center;
+    align-self: center;
+    width: 53rem;
+    height: 3rem;
+    margin: 10px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+}
+
+.bt{
+    position: relative;
+    align-self: center;
+    width: 50%;
+    left: 26rem;
+}
+
+#deletedropdown{
+    position: relative;
+    width: 235%;
+}
+
+#table-container{
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table-container tr:nth-child(even){background-color: #f2f2f2;}
+#table-container tr:nth-child(odd){background-color: #ff7722;}
+#table-container td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#table-container tr:hover {background-color: #ddd;}
+
+#table-container th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: orangered;
+    color: white;
+}
