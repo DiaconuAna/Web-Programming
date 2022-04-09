@@ -14,3 +14,4 @@
 - [Lab 3 - CSS Layouts](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%203)
 - [Lab 4 - Javascript](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%204)
 - [Lab 5 - jQuery](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%205)
+- [Lab 7 - PHP, AJAX, JSON](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%207)
