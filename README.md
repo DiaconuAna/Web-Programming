@@ -9,9 +9,12 @@
  - [Lecture 6 - jQuery](https://unexpected-fin-7b2.notion.site/jQuery-336bf3b4398744e9b5f3a8b3f2761673)
 
 **Lab Work**
-- [Lab 1 - HTML](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%201)
-- [Lab 2 - CSS Simple](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%202)
-- [Lab 3 - CSS Layouts](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%203)
-- [Lab 4 - Javascript](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%204)
-- [Lab 5 - jQuery](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%205)
-- [Lab 7 - PHP, AJAX, JSON](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%207)
+- [Lab 1  - HTML](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%201)
+- [Lab 2  - CSS Simple](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%202)
+- [Lab 3  - CSS Layouts](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%203)
+- [Lab 4  - Javascript](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%204)
+- [Lab 5  - jQuery](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%205)
+- [Lab 7  - PHP, AJAX, JSON](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%207)
+- [Lab 8  - Angular, PHP](coming soon)
+- [Lab 9  - JSP, Java Servlets](coming soon)
+- [Lab 10 - ASP.NET](coming soon_
