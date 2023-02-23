@@ -16,5 +16,5 @@
 - [Lab 5  - jQuery](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%205)
 - [Lab 7  - PHP, AJAX, JSON](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%207)
 - [Lab 8  - Angular, PHP](coming soon)
-- [Lab 9  - JSP, Java Servlets](coming soon)
+- [Lab 9  - JSP, Java Servlets](https://github.com/DiaconuAna/Web-Programming/tree/main/Laboratory%209)
 - [Lab 10 - ASP.NET](coming soon)
