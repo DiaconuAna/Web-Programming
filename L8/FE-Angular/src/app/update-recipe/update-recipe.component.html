@@ -1,0 +1,33 @@
+<div id = "updateHeader">
+  <h2>UPDATE RECIPE</h2>
+</div>
+
+
+<form id = 'add' autocomplete="off" #updateForm = "ngForm" novalidate (ngSubmit)="onUpdate()">
+
+  <label class = "update" for="recipeId">Recipe Name: </label>
+  <br>
+
+  <select class = "update" id = "recipeId" name = "recipeId" #model = "ngModel" [(ngModel)]="recipeModel.Id" ngModel>
+    <option *ngFor = "let recipe of recipes">{{recipe.ID + "." + recipe.Name}}</option>
+  </select>
+  <br>
+
+  <label class = "update" for = "recipeDescr">Recipe Description: </label>
+  <br>
+
+  <input class = "update" type = "text" id = "recipeDescr" name = "description" placeholder="Enter recipe description ..." required
+         #model = "ngModel" [(ngModel)]="recipeModel.Description" ngModel>
+  <br>
+
+  <button class="button" type="submit"
+          [disabled]="updateForm.form.invalid">Update recipe</button>
+  <br><br>
+
+</form>
+
+<div id = "homeButton">
+  <button class = 'main' routerLink="">Home</button>
+</div>
+
+<span [innerHTML]="updateConfirmation"></span>

@@ -1,0 +1,24 @@
+<div id = "deleteHeader">
+  <h2>DELETE RECIPE</h2>
+</div>
+
+<form id = "delete" autocomplete="off" #deleteForm = "ngForm" novalidate (ngSubmit)="onDelete()">
+  <label class = "delete" for = "recipeName">Recipe Name: </label>
+  <br>
+  <select class = "delete" id = "recipeName" name = "name" #model = "ngModel"
+          [(ngModel)]="recipeID" ngModel>
+    <option *ngFor = "let recipe of recipes">{{recipe.ID + "." + recipe.Name}}</option>
+  </select>
+
+  <button class = "button" type = "submit"
+          [disabled]="deleteForm.form.invalid" (click) = "refreshPage()">Delete recipe</button>
+  <br>
+</form>
+
+
+<div id = "homeButton">
+  <button class = 'main' routerLink="">Home</button>
+</div>
+
+<span [innerHTML]="deleteConfirmation"></span>
+

@@ -1,0 +1,24 @@
+<div id = "browseHeader">
+  <h2>BROWSE RECIPES</h2>
+</div>
+
+<table id = "table-container">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+  <tbody>
+  <tr *ngFor="let log of recipes">
+    <td *ngFor="let cell of log">{{cell}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div id = "homeButton">
+  <button class = 'main' routerLink="">Home</button>
+</div>
