@@ -1,0 +1,45 @@
+<div id = "browseHeader">
+  <h2>FILTER RECIPES</h2>
+</div>
+
+
+<form id = "filter" autocomplete="off" #filterForm = "ngForm" novalidate (ngSubmit)="filter()">
+
+  <label class = "add" for="typeID">Recipe Type:</label><br>
+  <select class = "add" id = "typeID" name = "type" #model = "ngModel" [(ngModel)]="typeId" ngModel>
+    <option *ngFor = "let t of types">{{t.type}}</option>
+  </select>
+  <br>
+
+  <table id = "table-container">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let log of recipes">
+      <td>{{log.name}}</td>
+      <td>{{log.firstName}}</td>
+      <td>{{log.lastName}}</td>
+      <td>{{log.typeDescr}}</td>
+      <td>{{log.description}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <button class="button" type="submit"
+          [disabled]="filterForm.form.invalid">Filter recipes</button>
+
+</form>
+
+
+
+<div id = "homeButton">
+  <button class = 'main' routerLink="/home">Home</button>
+</div>
+

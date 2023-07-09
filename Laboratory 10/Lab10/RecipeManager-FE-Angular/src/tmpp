@@ -1,0 +1,93 @@
+<form class="center-form" autocomplete="off" #logForm="ngForm" novalidate (ngSubmit)="onAdd()">
+    <label class="boxes-home">
+      <input type="text" class="box-input" name="type" placeholder="Enter type of log" required
+             #model="ngModel"
+             [(ngModel)]="logModel.type"
+             ngModel>
+      <br>
+      <input type="text" class="box-input" name="severity" placeholder="Enter severity of log" required
+             #model="ngModel"
+             [(ngModel)]="logModel.severity"
+             ngModel>
+      <br>
+      <input type="text" class="box-input" name="date" placeholder="Enter date (yyyy-mm-dd)" required
+             #model="ngModel"
+             [(ngModel)]="logModel.date"
+             ngModel>
+      <br>
+      <input type="text" class="box-input" name="message" placeholder="Enter message for log" required
+             #model="ngModel"
+             [(ngModel)]="logModel.message"
+             ngModel>
+    </label>
+
+  <button class="button" type="submit"
+          [disabled]="logForm.form.invalid" (click) = "refreshPage()">Add log</button>
+  <br><br>
+  <span [innerHTML]="addResponse"></span>
+
+</form>
+<?php
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, X-Requested-With");
+
+include '../backend/database-connection.php';
+
+global $conn;
+
+session_start();
+$userId = $_SESSION["id"];
+
+$query = "SELECT * FROM `logbook` WHERE user = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$rows = array();
+if($result = $stmt->get_result()){
+  while ($row = mysqli_fetch_array($result)){
+    $rows[] = $row;
+  }
+  echo json_encode($rows);
+}
+$conn->close();
+?>
+
+-- in service
+fetchData(): Observable<any>{
+    return this._http.get("lab8/backend/dropdown.php");
+  }
+
+ -- in component
+   fetchData(): void {
+     this._deleteService.fetchData()
+       .subscribe(res => this.logs = res);
+   }
+\
+-- dropdown
+
+  <select class="box-input" name="id"
+              #model="ngModel"
+              [(ngModel)]="logId"
+              ngModel>
+        <option *ngFor="let log of logs">{{log.id}}</option>
+      </select>
+
+--
+<form class="center-form" #logIdForm="ngForm" novalidate (ngSubmit)="onDelete()">
+
+    <label class="boxes-home">
+      <select class="box-input" name="id"
+              #model="ngModel"
+              [(ngModel)]="logId"
+              ngModel>
+        <option *ngFor="let log of logs">{{log.id}}</option>
+      </select>
+    </label>
+
+  <button class="button" type="submit"
+          [disabled]="logIdForm.form.invalid" (click) = "refreshPage()">Delete log</button>
+  <br><br>
+  <span [innerHTML]="deleteResponse"></span>
+
+</form>

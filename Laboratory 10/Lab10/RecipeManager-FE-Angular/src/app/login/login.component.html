@@ -1,0 +1,9 @@
+<form>
+  <div class="search">
+    <input class="add" type="text" placeholder="Username" #username>
+    <br>
+    <input class="add" type="password" placeholder="Password" #password>
+    <br>
+    <button class="btn btn-success" (click)="login(username.value,password.value)">Login</button>
+  </div>
+</form>

@@ -1,0 +1,44 @@
+
+<div id = "addHeader">
+  <h2>ADD RECIPE</h2>
+</div>
+
+<form id='add' autocomplete="off" #addForm="ngForm" novalidate (ngSubmit)="onAdd()">
+
+  <label class = "add" for="authorID">Author Name:</label><br>
+  <select class = "add" id = "authorID" name = "author" #model = "ngModel" [(ngModel)]="authorName" ngModel>
+    <option *ngFor="let author of authors">{{author.firstName + " " + author.lastName}}</option>
+  </select>
+
+  <br>
+
+  <label class = "add" for="RecipeName">Recipe Name:</label><br>
+
+  <input class = "add" type="text" id= "RecipeName" name = "name" placeholder="Enter recipe name ..." required
+    #model = "ngModel" [(ngModel)]="recipeModel.name" ngModel>
+  <br>
+
+  <label class = "add" for="typeID">Recipe Type:</label><br>
+  <select class = "add" id = "typeID" name = "type" #model = "ngModel" [(ngModel)]="recipeModel.typeDescr" ngModel>
+    <option *ngFor = "let type of types">{{type.type}}</option>
+  </select>
+  <br>
+
+
+  <label class = "add" for="RecipeDescription">Recipe Description:</label><br>
+  <input class = "add" type="text" id= "RecipeDescription" name = "description" placeholder="Enter recipe description ..." required
+         #model = "ngModel" [(ngModel)]="recipeModel.description" ngModel>
+  <br>
+
+  <button class="button" type="submit"
+          [disabled]="addForm.form.invalid" (click)="button2()">Add recipe</button>
+  <br><br>
+
+</form>
+
+<div id = "homeButton">
+  <button class = 'main' routerLink="/home">Home</button>
+</div>
+
+<span [innerHTML]="addConfirmation"></span>
+
